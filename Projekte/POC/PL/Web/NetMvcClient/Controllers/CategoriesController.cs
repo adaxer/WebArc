@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NetMvcClient.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,7 +13,12 @@ namespace NetMvcClient.Controllers
         public ActionResult Index()
         {
             //return new ContentResult { Content = "Hello Cats" };
-            return View();
+            var cats = new List<Category>
+            {
+                new Category{ CategoryID=1, CategoryName="Drinks", Description="Getränke aller Art"},
+                new Category{ CategoryID=2, CategoryName="Burgers", Description="Ham- Cheese- und Fischburger"},
+            };
+            return View(cats);
         }
 
         // GET: Categories/Details/5
@@ -29,7 +35,7 @@ namespace NetMvcClient.Controllers
 
         // POST: Categories/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Category value)
         {
             try
             {
