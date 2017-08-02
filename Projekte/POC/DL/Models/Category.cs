@@ -10,8 +10,6 @@
 // TargetFrameworkVersion = 4.5
 #pragma warning disable 1591    //  Ignore "Missing XML Comment" warning
 
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Southwind.Models
 {
@@ -20,24 +18,9 @@ namespace Southwind.Models
     [System.CodeDom.Compiler.GeneratedCode("EF.Reverse.POCO.Generator", "2.32.0.0")]
     public partial class Category
     {
-        [Column(@"CategoryID", Order = 1, TypeName = "int")]
-        [Required]
-        [Key]
-        [Display(Name = "Category ID")]
         public int CategoryId { get; set; } // CategoryID (Primary key)
-
-        [Required]
-        [MaxLength(15)]
-        [StringLength(15)]
-        [Display(Name = "Category name")]
         public string CategoryName { get; set; } // CategoryName (length: 15)
-
-        [MaxLength]
-        [Display(Name = "Description")]
         public string Description { get; set; } // Description (length: 1073741823)
-
-        [MaxLength(2147483647)]
-        [Display(Name = "Picture")]
         public byte[] Picture { get; set; } // Picture (length: 2147483647)
 
         // Reverse navigation

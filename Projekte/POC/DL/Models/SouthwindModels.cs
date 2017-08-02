@@ -7,7 +7,7 @@
 // Do not make changes directly to this file - edit the template instead.
 //
 // The following connection settings were used to generate this file:
-//     Configuration file:     "DAL\DataAccess\App.config"
+//     Configuration file:     "PL\Web\NetMvcClient\Web.config"
 //     Connection String Name: "NorthwindConnection"
 //     Connection String:      "Data Source=(localdb)\mssqllocaldb;Initial Catalog=Northwind;Integrated Security=True"
 // ------------------------------------------------------------------------------------------------
@@ -26,8 +26,6 @@
 // TargetFrameworkVersion = 4.5
 #pragma warning disable 1591    //  Ignore "Missing XML Comment" warning
 
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Southwind.Models
 {
