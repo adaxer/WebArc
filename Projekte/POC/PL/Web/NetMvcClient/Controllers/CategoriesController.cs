@@ -1,4 +1,5 @@
-﻿using Southwind.Models;
+﻿using Southwind.Interfaces;
+using Southwind.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
 
@@ -6,15 +7,17 @@ namespace NetMvcClient.Controllers
 {
     public class CategoriesController : Controller
     {
+        private ICategoryService categoryService;
+
+        public CategoriesController(ICategoryService service)
+        {
+            this.categoryService = service;
+        }
+
         // GET: Categories
         public ActionResult Index()
         {
-            //return new ContentResult { Content = "Hello Cats" };
-            var cats = new List<Category>
-            {
-                new Category{ CategoryID=1, CategoryName="Drinks", Description="Getränke aller Art"},
-                new Category{ CategoryID=2, CategoryName="Burgers", Description="Ham- Cheese- und Fischburger"},
-            };
+            var cats = categoryService.LoadCategories();
             return View(cats);
         }
 
