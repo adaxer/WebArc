@@ -1,8 +1,5 @@
-﻿using NetMvcClient.Models;
-using System;
+﻿using Southwind.Models;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace NetMvcClient.Controllers
