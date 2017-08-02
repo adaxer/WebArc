@@ -36,6 +36,7 @@
     <Compile Include="Category.cs">
       <DependentUpon>SouthwindModels.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models.Part.cs" />
     <Compile Include="Product.cs">
       <DependentUpon>SouthwindModels.tt</DependentUpon>
     </Compile>

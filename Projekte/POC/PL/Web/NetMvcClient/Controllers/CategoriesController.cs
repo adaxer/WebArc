@@ -40,6 +40,7 @@ namespace NetMvcClient.Controllers
             try
             {
                 // TODO: Add insert logic here
+                categoryService.AddCategory(value);
 
                 return RedirectToAction("Index");
             }

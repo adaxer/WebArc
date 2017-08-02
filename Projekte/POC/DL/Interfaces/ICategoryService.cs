@@ -10,5 +10,6 @@ namespace Southwind.Interfaces
     public interface ICategoryService
     {
         IEnumerable<Category> LoadCategories();
+        void AddCategory(Category category);
     }
 }

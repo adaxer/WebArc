@@ -16,6 +16,13 @@ namespace Southwind.BusinessLogic
         {
             categoryRepository = catRepo;
         }
+
+        public void AddCategory(Category category)
+        {
+            categoryRepository.Add(category);
+            categoryRepository.Save();
+        }
+
         public IEnumerable<Category> LoadCategories()
         {
              return categoryRepository.Find().ToList();

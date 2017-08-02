@@ -15,6 +15,7 @@ namespace Southwind.Interfaces
         void Delete(T entity);
 
         IQueryable<T> Find(Expression<Func<T, bool>> filter=null);
+        void Save();
 
         //void SetUOW(IUoW uow);
     }

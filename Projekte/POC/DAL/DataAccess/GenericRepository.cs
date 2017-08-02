@@ -24,6 +24,11 @@ namespace Southwind.DataAccess
             context.Set<T>().Add(entity);
         }
 
+        public virtual void Save()
+        {
+            context.SaveChanges();
+        }
+
         public virtual void Delete(T entity)
         {
             context.Set<T>().Remove(entity);
