@@ -3,6 +3,9 @@ using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
 using Southwind.Interfaces;
 using Southwind.BusinessLogic;
+using Southwind.Models;
+using Southwind.DataAccess;
+using System.Data.Entity;
 
 namespace NetMvcClient.App_Start
 {
@@ -39,6 +42,8 @@ namespace NetMvcClient.App_Start
 
             // TODO: Register your types here
             container.RegisterType<ICategoryService, CategoryService>();
+            container.RegisterType(typeof(IRepository<>), typeof(GenericRepository<>));
+            container.RegisterType<DbContext, SouthwindContext>(new PerRequestLifetimeManager(), new InjectionConstructor());
         }
     }
 }

@@ -10,14 +10,15 @@ namespace Southwind.BusinessLogic
 {
     public class CategoryService : ICategoryService
     {
+        private IRepository<Category> categoryRepository;
+
+        public CategoryService(IRepository<Category> catRepo)
+        {
+            categoryRepository = catRepo;
+        }
         public IEnumerable<Category> LoadCategories()
         {
-            var cats = new List<Category>
-            {
-                new Category{ CategoryID=1, CategoryName="Drinks", Description="Getränke aller Art"},
-                new Category{ CategoryID=2, CategoryName="Burgers", Description="Ham- Cheese- und Businessburger"},
-            };
-            return cats;
+             return categoryRepository.Find().ToList();
         }
     }
 }
