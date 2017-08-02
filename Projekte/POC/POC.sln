@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PL", "PL", "{55CAE381-4998-4457-807C-BC7A975CE771}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DL", "DL", "{4AE1D96A-F250-412B-9FD0-AAB2F29520EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BL", "BL", "{A70F4C05-F336-4409-9C76-90E94AC12AE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{21D4225C-4CF8-4B11-9AE5-B77ECAA18053}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SL", "SL", "{2C0F6339-66A1-4116-8D54-DAF2A1564500}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{3957E7F6-E74F-4970-87EC-FD6018B934F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetMvcClient", "PL\Web\NetMvcClient\NetMvcClient.csproj", "{72049C3E-C792-4D0F-B575-447980AD7731}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72049C3E-C792-4D0F-B575-447980AD7731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72049C3E-C792-4D0F-B575-447980AD7731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72049C3E-C792-4D0F-B575-447980AD7731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72049C3E-C792-4D0F-B575-447980AD7731}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3957E7F6-E74F-4970-87EC-FD6018B934F3} = {55CAE381-4998-4457-807C-BC7A975CE771}
+		{72049C3E-C792-4D0F-B575-447980AD7731} = {3957E7F6-E74F-4970-87EC-FD6018B934F3}
+	EndGlobalSection
+EndGlobal
