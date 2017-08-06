@@ -26,13 +26,8 @@ namespace Southwind.DataAccess
 
         public CategoryConfiguration(string schema)
         {
-            ToTable("Categories", schema);
-            HasKey(x => x.CategoryId);
-
-            Property(x => x.CategoryId).HasColumnName(@"CategoryID").HasColumnType("int").IsRequired().HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
-            Property(x => x.CategoryName).HasColumnName(@"CategoryName").HasColumnType("nvarchar").IsRequired().HasMaxLength(15);
-            Property(x => x.Description).HasColumnName(@"Description").HasColumnType("ntext").IsOptional().IsMaxLength();
-            Property(x => x.Picture).HasColumnName(@"Picture").HasColumnType("image").IsOptional().HasMaxLength(2147483647);
+            Property(x => x.Description).IsOptional();
+            Property(x => x.Picture).IsOptional();
             InitializePartial();
         }
         partial void InitializePartial();

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Southwind.Models;
+using Refit;
 
 namespace Southwind.Core.Services
 {
@@ -17,7 +18,23 @@ namespace Southwind.Core.Services
 
         public IEnumerable<Category> LoadCategories()
         {
-            throw new NotImplementedException();
+            try
+            {
+                var catApi = RestService.For<ISouthwindApi>("http://localhost:9000/api/categories");
+
+                var result = catApi.GetCategories().Result;
+                return result;
+            }
+            catch(Exception ex)
+            {
+                return null;
+            }
         }
+    }
+
+    public interface ISouthwindApi
+    {
+        [Get("/all")]
+        Task<IEnumerable<Category>> GetCategories();
     }
 }

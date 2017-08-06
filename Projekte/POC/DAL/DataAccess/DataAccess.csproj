@@ -51,6 +51,7 @@
     <Compile Include="CategoryConfiguration.cs">
       <DependentUpon>SouthwindDB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Db.Partial.cs" />
     <Compile Include="FakeDbSet.cs">
       <DependentUpon>SouthwindDB.tt</DependentUpon>
     </Compile>

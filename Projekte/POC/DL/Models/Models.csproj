@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AnnotationFakes.cs" />
     <Compile Include="Category.cs">
       <DependentUpon>SouthwindModels.tt</DependentUpon>
     </Compile>

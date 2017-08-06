@@ -130,6 +130,9 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>5.2.3</Version>
     </PackageReference>
+    <PackageReference Include="Refit">
+      <Version>3.1.0</Version>
+    </PackageReference>
     <PackageReference Include="Unity">
       <Version>4.0.1</Version>
     </PackageReference>
