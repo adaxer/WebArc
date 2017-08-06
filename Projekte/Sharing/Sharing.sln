@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{2CDAE3EA-1754-4DAC-9054-43D0054B7AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DroidClient", "DroidClient\DroidClient.csproj", "{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FullNetLibrary", "FullNetLibrary\FullNetLibrary.csproj", "{8FD407D5-BECD-4BFE-956C-EABF1C967E42}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedElements", "SharedElements\SharedElements.shproj", "{EB3CCCE7-D09A-4E77-AB54-0823860C8179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableLib", "PortableLib\PortableLib.csproj", "{7615BD65-3A10-49C2-A354-AA6C3FF8031A}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedElements\SharedElements.projitems*{2cdae3ea-1754-4dac-9054-43d0054b7ac2}*SharedItemsImports = 4
+		SharedElements\SharedElements.projitems*{4fd4bd2b-abdd-499e-a927-5d3ac237aeff}*SharedItemsImports = 4
+		SharedElements\SharedElements.projitems*{eb3ccce7-d09a-4e77-ab54-0823860c8179}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CDAE3EA-1754-4DAC-9054-43D0054B7AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CDAE3EA-1754-4DAC-9054-43D0054B7AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CDAE3EA-1754-4DAC-9054-43D0054B7AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CDAE3EA-1754-4DAC-9054-43D0054B7AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD4BD2B-ABDD-499E-A927-5D3AC237AEFF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8FD407D5-BECD-4BFE-956C-EABF1C967E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD407D5-BECD-4BFE-956C-EABF1C967E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD407D5-BECD-4BFE-956C-EABF1C967E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD407D5-BECD-4BFE-956C-EABF1C967E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7615BD65-3A10-49C2-A354-AA6C3FF8031A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7615BD65-3A10-49C2-A354-AA6C3FF8031A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7615BD65-3A10-49C2-A354-AA6C3FF8031A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7615BD65-3A10-49C2-A354-AA6C3FF8031A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
