@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 - Contracts", "00 - Contracts", "{01CAA2FD-0206-4E40-A0BA-293C16960881}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10 - DataAccess", "10 - DataAccess", "{C166962A-6555-4044-B360-9CB1CA86C86C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "20 - BusinessLogic", "20 - BusinessLogic", "{79FAA6E7-776F-48D7-A3C9-5D1DE372D87D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "30 - Services", "30 - Services", "{16E17684-93FE-4A45-94EA-856D659AA8AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "40 - Presentation", "40 - Presentation", "{9D1A9B4B-8D47-4DB9-8B2D-FCD961C51208}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{0EE78421-9824-4B2E-BF71-C582994795D6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Southwind.WebApp", "PL\Southwind.WebApp\Southwind.WebApp.csproj", "{A1E0FFF7-AFC2-4378-A1D9-58436D423390}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Southwind.Models", "CL\Southwind.Models\Southwind.Models.csproj", "{13875A02-7E6F-45D6-9B4D-820B14F59B9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{07FA0349-49C2-4770-A38C-6656041B870D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Southwind.Mocks", "Helpers\Southwind.Mocks\Southwind.Mocks.csproj", "{7EE1DD0C-0982-4C42-B61E-A205D7314807}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Southwind.Interfaces", "CL\Southwind.Interfaces\Southwind.Interfaces.csproj", "{CAD93DA1-64E1-4036-8435-BD28CF99F3A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Southwind.ServiceApp", "SL\Southwind.ServiceApp\Southwind.ServiceApp.csproj", "{58190CAB-299D-4C93-87B0-EB40B0BF7522}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "99 - Helpers", "99 - Helpers", "{476A5F33-B6A3-47AB-9575-335A3DEFF75D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Southwind.ServiceLib", "SL\Southwind.ServiceLib\Southwind.ServiceLib.csproj", "{076CF264-45BB-4FD9-96C3-D86CE8CB023B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Southwind.BusinessObjects", "BL\Southwind.BusinessObjects\Southwind.BusinessObjects.csproj", "{6F0484E4-BE02-4585-AD4F-828A3DE32E1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1E0FFF7-AFC2-4378-A1D9-58436D423390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1E0FFF7-AFC2-4378-A1D9-58436D423390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1E0FFF7-AFC2-4378-A1D9-58436D423390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1E0FFF7-AFC2-4378-A1D9-58436D423390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13875A02-7E6F-45D6-9B4D-820B14F59B9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13875A02-7E6F-45D6-9B4D-820B14F59B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13875A02-7E6F-45D6-9B4D-820B14F59B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13875A02-7E6F-45D6-9B4D-820B14F59B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE1DD0C-0982-4C42-B61E-A205D7314807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE1DD0C-0982-4C42-B61E-A205D7314807}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE1DD0C-0982-4C42-B61E-A205D7314807}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE1DD0C-0982-4C42-B61E-A205D7314807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD93DA1-64E1-4036-8435-BD28CF99F3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD93DA1-64E1-4036-8435-BD28CF99F3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD93DA1-64E1-4036-8435-BD28CF99F3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD93DA1-64E1-4036-8435-BD28CF99F3A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58190CAB-299D-4C93-87B0-EB40B0BF7522}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58190CAB-299D-4C93-87B0-EB40B0BF7522}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58190CAB-299D-4C93-87B0-EB40B0BF7522}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58190CAB-299D-4C93-87B0-EB40B0BF7522}.Release|Any CPU.Build.0 = Release|Any CPU
+		{076CF264-45BB-4FD9-96C3-D86CE8CB023B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{076CF264-45BB-4FD9-96C3-D86CE8CB023B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{076CF264-45BB-4FD9-96C3-D86CE8CB023B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{076CF264-45BB-4FD9-96C3-D86CE8CB023B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0484E4-BE02-4585-AD4F-828A3DE32E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0484E4-BE02-4585-AD4F-828A3DE32E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0484E4-BE02-4585-AD4F-828A3DE32E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0484E4-BE02-4585-AD4F-828A3DE32E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0EE78421-9824-4B2E-BF71-C582994795D6} = {9D1A9B4B-8D47-4DB9-8B2D-FCD961C51208}
+		{A1E0FFF7-AFC2-4378-A1D9-58436D423390} = {0EE78421-9824-4B2E-BF71-C582994795D6}
+		{13875A02-7E6F-45D6-9B4D-820B14F59B9B} = {01CAA2FD-0206-4E40-A0BA-293C16960881}
+		{07FA0349-49C2-4770-A38C-6656041B870D} = {9D1A9B4B-8D47-4DB9-8B2D-FCD961C51208}
+		{7EE1DD0C-0982-4C42-B61E-A205D7314807} = {476A5F33-B6A3-47AB-9575-335A3DEFF75D}
+		{CAD93DA1-64E1-4036-8435-BD28CF99F3A2} = {01CAA2FD-0206-4E40-A0BA-293C16960881}
+		{58190CAB-299D-4C93-87B0-EB40B0BF7522} = {16E17684-93FE-4A45-94EA-856D659AA8AE}
+		{076CF264-45BB-4FD9-96C3-D86CE8CB023B} = {16E17684-93FE-4A45-94EA-856D659AA8AE}
+		{6F0484E4-BE02-4585-AD4F-828A3DE32E1B} = {79FAA6E7-776F-48D7-A3C9-5D1DE372D87D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {713CA1D9-CD3D-418C-83A6-49DFE00E397E}
+	EndGlobalSection
+EndGlobal
