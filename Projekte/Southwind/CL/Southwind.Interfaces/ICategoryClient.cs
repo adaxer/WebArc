@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace Southwind.Contracts.Interfaces
 {
-    public interface ICategoryService
+    public interface ICategoryClient
     {
         Task<IEnumerable<Category>> LoadCategories();
     }

@@ -1,22 +1,28 @@
 ﻿using Southwind.Contracts.Interfaces;
-using Southwind.Contracts.Models;
-using System;
+using Southwind.DataAccess.Models;
 using System.Collections.Generic;
-using System.Threading.Tasks;
+using System.Linq;
 
 namespace Southwind.BusinessLayer.Objects
 {
     public class CategoryService : ICategoryService
     {
-        public async Task<IEnumerable<Category>> LoadCategories()
+        private IRepository<Category> categoryRepository;
+
+        public CategoryService(IRepository<Category> catRepo)
         {
-            await Task.Delay(2000);
-            var result = new List<Category>
-                {
-                    new Category { Id=1, Name="Hummer & Kaviar", Description="Medium or rare"},
-                    new Category{Id=2, Name="Drinks", Description="Soft or hard"}
-                };
-            return result;
+            categoryRepository = catRepo;
+        }
+
+        public void AddCategory(Category category)
+        {
+            categoryRepository.Add(category);
+            categoryRepository.Save();
+        }
+
+        public IEnumerable<Category> LoadCategories()
+        {
+             return categoryRepository.Find().ToList();
         }
     }
 }

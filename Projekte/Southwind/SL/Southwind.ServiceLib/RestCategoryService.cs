@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Southwind.Services.Lib
 {
-    public class RestCategoryService : ICategoryService
+    public class RestCategoryService : ICategoryClient
     {
         IRestService restService;
         private string baseUrl;

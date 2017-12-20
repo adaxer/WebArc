@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Southwind.Contracts.Interfaces;
+using Southwind.Contracts.Models;
 
 namespace Southwind.ServiceApp.Controllers
 {
@@ -19,9 +20,9 @@ namespace Southwind.ServiceApp.Controllers
 
         // GET api/values
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public IActionResult Get()
         {
-            var data = await categoryService.LoadCategories();
+            var data = categoryService.LoadCategories().Select(c=>new Category { Id = c.CategoryId, Name = c.CategoryName, Description = c.Description }).ToList();
             return Ok(data);
         }
 

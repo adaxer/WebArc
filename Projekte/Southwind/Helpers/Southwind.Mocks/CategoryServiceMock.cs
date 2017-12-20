@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Southwind.Mocks
 {
-    public class CategoryServiceMock : ICategoryService
+    public class CategoryServiceMock : ICategoryClient
     {
         //public Task<IEnumerable<Category>> LoadCategories()
         //{

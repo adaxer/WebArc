@@ -21,7 +21,7 @@ namespace Southwind.Presentation.Web
         {
             services.AddMvc();
             services.AddSingleton<IRestService, RestService>();
-            services.AddSingleton<ICategoryService, RestCategoryService>(sp => new RestCategoryService(sp.GetRequiredService<IRestService>(), Configuration["ServiceLayerUrl"]));
+            services.AddSingleton<ICategoryClient, RestCategoryService>(sp => new RestCategoryService(sp.GetRequiredService<IRestService>(), Configuration["ServiceLayerUrl"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

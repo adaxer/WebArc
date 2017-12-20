@@ -286,3 +286,13 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+/WebArc.zip
+/Projekte.zip
+/07-Implementation.pptx
+/06-ClientProgrammierung.pptx
+/05-ServerProgrammierung.pptx
+/04-ModuleStructuring.pptx
+/03-ClientPatterns.pptx
+/02-DesignPatterns.pptx
+/01-Architektur.pptx
+/00-Agenda-Intro.pptx

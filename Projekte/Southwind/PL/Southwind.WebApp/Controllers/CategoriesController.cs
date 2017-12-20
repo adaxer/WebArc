@@ -12,9 +12,9 @@ namespace Southwind.Presentation.Web.Controllers
 {
     public class CategoriesController : Controller
     {
-        private ICategoryService categoryService;
+        private ICategoryClient categoryService;
 
-        public CategoriesController(ICategoryService catService)
+        public CategoriesController(ICategoryClient catService)
         {
             categoryService = catService;
         }
