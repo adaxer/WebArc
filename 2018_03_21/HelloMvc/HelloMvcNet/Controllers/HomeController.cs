@@ -35,8 +35,8 @@ namespace HelloMvcNet.Controllers
         [Route("Home/Special/Info/{name}/{value}/{isok}")]
         public ActionResult Info(string name, bool? isok, int? value)
         {
-            var objects = shopService.GetCategories();
-            return View(objects);
+           // var objects = shopService.GetCategories();
+            return View(/*objects*/);
         }
     }
 }
