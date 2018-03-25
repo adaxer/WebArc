@@ -4,15 +4,24 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Southwind.Interfaces;
 
 namespace Southwind.WebApp.Controllers
 {
     public class ShopController : Controller
     {
+        IShopService _shopService;
+
+        public ShopController(IShopService shopService)
+        {
+            _shopService = shopService;
+        }
+
         [HttpGet]
         public ActionResult Categories()
         {
-            return View();
+            var categories = _shopService.GetCategories();
+            return View(categories);
         }
 
         // GET: Shop/Details/5

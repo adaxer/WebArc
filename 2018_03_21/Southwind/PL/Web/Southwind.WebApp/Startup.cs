@@ -1,11 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Southwind.BL;
+using Southwind.DAL;
+using Southwind.Interfaces;
 
 namespace Southwind.WebApp
 {
@@ -22,6 +26,16 @@ namespace Southwind.WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddScoped<IShopService, ShopService>();
+            services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<DbContext>(CreateContext);
+        }
+
+        private DbContext CreateContext(IServiceProvider services)
+        {
+            var conn = Configuration.GetValue<string>("NorthwindConnection");
+            return new SouthwindDb(conn);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
